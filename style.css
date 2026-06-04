@@ -1,0 +1,165 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8c7cc;
+}
+.frst-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.win-msg{
+    font-size: 2.5rem;
+    color: rgb(0, 94, 0);
+    padding: 0.4rem;
+    text-align: center;
+    font-weight: 900;
+}
+.button{
+    height: 3rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    background-color: #0e0f19;
+    border: none;
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.head{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0e0f19;
+    color :aliceblue;
+}
+.game{
+    height : 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sign{
+    width : 92vmin;
+    height : 30vmin;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sign-option{
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height : 22vmin;
+    width : 22vmin;
+}
+.sign-option:hover{
+    opacity: 0.5;
+}
+.choices{
+    height : 40vmin;
+    width : 80vmin;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 0.5rem;
+}
+.ans p{
+    color :#0e0f19;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: 800;
+}
+.scores{
+    height : 9vmin;
+    width : 60vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.score-count{
+    display: flex;
+    gap : 0.4rem;
+}
+.score-count p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.result{
+    height : 3rem;
+    width :auto;
+    background-color: #1a1c30;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0rem 0rem 2rem rgba(0,0,0,0.8);
+    border: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+.rounds { 
+    margin-bottom: 1rem;
+}
+.hide{
+    display : none;
+}
+#reset-button{
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+#reset-button:hover {
+    background-color: rgb(139, 79, 0);
+}
+.rounds:hover{
+    background-color: rgb(139, 79, 0);
+}
+@media (max-width : 600px){
+    .score-count p{
+    font-size: 1rem;
+    }
+    .rounds { 
+        margin-bottom: 1.5rem;
+    }
+    .result {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        height : 2.5rem;
+        padding: 0.8rem;
+    }
+}
+@media (max-width : 449px){
+    .head{
+        font-size: 1.8rem;
+    }
+    .score-count p{
+        font-size: 0.7rem;
+    }
+    .ans p{
+        font-size: 1rem;
+    }
+    .result {
+        font-size: 0.7rem;
+    }
+    .game{
+        height : 70vh;
+    }
+}

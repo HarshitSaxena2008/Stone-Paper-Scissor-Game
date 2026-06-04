@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="head" >Stone Paper Scissor</h1>
+        <div class="frst-content hide">
+        <div class="win-msg"></div>
+        <button id="new-button" class="button">New Game</button>
+        </div>
+        <div class="game">
+            <button class = "rounds button">Custom Rounds</button>
+            <div class="sign">
+                <div class = "sign-option" id= "rock"style="background-image: url('stone.png');"></div>
+                <div class = "sign-option" id = "paper" style="background-image: url('paper.png');"></div>
+                <div class = "sign-option" id = "scissor" style="background-image: url('scissor.png');"></div>
+            </div>
+            <div class="choices hide">
+                <div class="User-choice ans">
+                    <p>Your choice</p>
+                    <div class="user-choice-img sign-option"></div>
+                </div>
+                <div class="Comp-choice ans">
+                    <p>Computer's choice</p>
+                    <div class="comp-choice-img sign-option"></div>
+                </div>
+            </div>
+            <div class="scores">
+                <div id="user-score" class="score-count">
+                    <p>You : </p>
+                    <p id="user-count">0</p>
+                </div>
+                <div id="comp-score" class="score-count">
+                    <p>Comp : </p>
+                    <p id="comp-count">0</p>
+                </div>
+                <div id="draw-score" class="score-count">
+                    <p>Draw : </p>
+                    <p id="draw-count">0</p>
+                </div>
+            </div>
+            <p class="result">Play your move?</p>
+            <button id="reset-button" class="button hide">Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
