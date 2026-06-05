@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harshitsaxena2008.github.io/Stone-Paper-Scissor-Game/sitemap.xml
